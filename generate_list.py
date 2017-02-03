@@ -1,12 +1,14 @@
 import random
 def generate_list():
-    sum = 0
-    alist = [ x for x in range (random.randint(-10, 10)) ]
+    while True:
+        sum = 0
+        alist = [ x for x in range (random.randint(-10, 10)) ]
+        for i in range (len(alist)):
+            sum+=alist[i]
+        assert(sum > -100), "Array value under -100"
+        if (alist):
+            break
     assert(alist), "Array list is NULL"
-    for i in range (len(alist)):
-        sum+=alist[i]
-    assert(sum > -100), "Array value under -100"
-    
     return alist
     
 """

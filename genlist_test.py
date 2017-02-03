@@ -7,5 +7,5 @@ sys.path.append(cwd)
 #print (sys.path)
 
 #Test the module: generate_list
-from genlist_test import printIt
+from generate_list import printIt
 printIt()

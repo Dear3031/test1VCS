@@ -6,7 +6,7 @@ def generate_list():
 """
 print agenerted list
 """
-def printIt()
+def printIt():
     print(generate_list())
     
 def main():

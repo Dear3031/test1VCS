@@ -1,6 +1,12 @@
 import random
 def generate_list():
-    alist = [ x for x in range (random.randint(-10, 10)) ]
+    
+    while True:
+        alist = [ -x-100 for x in range (random.randint(0, 10)) ]
+        if(alist):
+            break
+    
+    
     return alist
     
 """
